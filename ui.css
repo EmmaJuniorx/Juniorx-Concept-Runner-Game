@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    color: #fff;
+}
+
+.screen {
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+#volume-control-container {
+    margin-top: 20px;
+}
+
+#volume-control {
+    width: 200px;
+}
+
+/* Additional CSS for the credits screen */
+#credits-screen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+#credits-screen h2 {
+    margin-bottom: 20px;
+}
+
+#credits-screen ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#credits-screen ul li {
+    margin: 10px 0;
+}
+
+#back-to-menu {
+    margin-top: 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}

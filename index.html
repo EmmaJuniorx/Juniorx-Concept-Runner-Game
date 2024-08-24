@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runner Game - Menu</title>
+    <link rel="stylesheet" href="ui.css">
+</head>
+
+<body>
+    <div id="menu-screen" class="screen">
+        <h1>Juniorx Concept Runner Game</h1>
+        <p> Copyright &copy; Juniorx Concept</p>
+        <button id="start-button">Start Game</button>
+        <button id="credits-button">Credits</button>
+        <button id="music-toggle">Toggle Music</button>
+        <div id="volume-control-container">
+            <label for="volume-control">Volume:</label>
+            <input type="range" id="volume-control" min="0" max="100" value="50">
+        </div>
+    </div>
+
+    <!-- credits.html -->
+    <div id="credits-screen" class="screen" style="display: none;">
+        <h2>Credits</h2>
+        <p>Game developed by Emma Juniorx</p>
+        <p>Special thanks to:</p>
+        <ul>
+            <li>NCS for the background music</li>
+            <li>Juniorx Concept for the game design and logic</li>
+            <li>Pixabay for the jump sound effects</li>
+            <li>Mixkit.co for the fail sound effects</li>
+            <li>ChatGPT (OpenAI) for assistance in game development</li>
+        </ul>
+        <button id="back-to-menu">Back to Menu</button>
+    </div>
+
+
+    <audio id="background-music" loop>
+        <source src="utomp3.com - Elektronomia  Energy  Progressive House  NCS  Copyright Free Music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="ui.js"></script>
+</body>
+
+</html>

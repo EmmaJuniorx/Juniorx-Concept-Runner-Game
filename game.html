@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runner Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="runner"></div>
+        <div id="obstacle-container"></div>
+        <div id="score">Score: 0</div>
+        <div id="high-score">High Score: 0</div> <!-- New element for high score -->
+        <div id="controls">
+            <button id="pause-button">Pause</button>
+            <button id="music-toggle">Mute Music</button>
+            <button id="back-to-menu">Back to Menu</button>
+        </div>
+        <audio id="background-music" loop>
+            <source src="Elektronomia - Sky High [NCS Release].mp3" type="audio/mpeg">
+        </audio>
+        <div id="popup-container">
+            <div id="popup-message"></div>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

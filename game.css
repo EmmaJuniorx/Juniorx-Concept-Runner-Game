@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Base Styles */
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #999;
+    overflow: hidden;
+}
+
+#runner {
+    position: absolute;
+    bottom: 50px; /* Adjusted to account for the increased jump height */
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #ff4757;
+    border-radius: 10px;
+}
+
+.obstacle {
+    position: absolute;
+    bottom: 50px; /* Adjusted from 0 to 50px */
+    background-color: #2ed573;
+    border-radius: 5px;
+}
+
+/* Score Display */
+#score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* High Score Display */
+#high-score {
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Controls Styles */
+#controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#controls button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Popup Styles */
+#popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#close-popup {
+    margin-top: 12px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #score,
+    #high-score {
+        font-size: 18px;
+        top: 10px;
+        left: 10px;
+    }
+
+    #high-score {
+        top: 40px; /* Increased space between score and high score */
+    }
+
+    #controls {
+        top: 10px;
+        right: 10px;
+    }
+
+    #controls button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #runner {
+        width: 40px;
+        height: 40px;
+        left: 30px;
+    }
+
+    .obstacle {
+        width: 30px;
+        height: 30px;
+        left: 30px;
+    }
+
+    #popup-container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #close-popup {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    #score,
+    #high-score {
+        font-size: 16px;
+        top: 5px;
+        left: 5px;
+    }
+
+    #high-score {
+        top: 30px; /* Increased space between score and high score */
+    }
+
+    #controls {
+        top: 5px;
+        right: 5px;
+    }
+
+    #controls button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    #runner {
+        width: 30px;
+        height: 30px;
+        left: 20px;
+    }
+
+    .obstacle {
+        width: 20px;
+        height: 20px;
+        left: 20px;
+    }
+
+    #popup-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    #close-popup {
+        padding: 6px;
+    }
+}
